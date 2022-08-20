@@ -443,6 +443,16 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form class="footer-form">
+            <h3 class="footer-title">Підпишіться на розсилку</h3>
+            <input type="text" name="" placeholder="E-mail"/>
+            <button type="submit" class="button-send">Підписатися<svg width="24px" height="24px">
+                  <use href="./images/logo.svg#icon-icon-send"></use>
+                </svg></button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -452,7 +462,51 @@
             <use href="./images/logo.svg#icon-Vector"></use>
           </svg>
         </button>
-      </div>
+        <h3 class="backdrop-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="backdrop-form">
+          <label for="" class="">
+            Ім'я 
+            <input type="text" class="backdrop-form-input" name="user-name" id="" required>
+            Телефон
+            <input type="tel" minlength="10" class="backdrop-form-input" name="user-tel" id="" required>
+            Пошта
+            <input type="email" class="backdrop-form-input" name="user-email" id="" required>
+            Коментар
+            <input type="text" placeholder="Введіть текст">
+            Погоджуюся з розсилкою та приймаю
+          <a href="" class="backdrop-text-effect">Умови договору</a>
+            <button type="submit" class="button-send">Відправити</button>
+          </label>
+        </form>
+        <!-- <ul class="list">
+          <li>
+            <p class="backdrop-pretitle">Ім'я</p>
+            <svg width="18px" height="18px">
+              <use href="./images/logo.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </li>
+          <li>
+            <p class="backdrop-pretitle">Телефон</p>
+            <svg width="18px" height="18px">
+              <use href="./images/logo.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </li>
+          <li>
+            <p class="backdrop-pretitle">Пошта</p>
+            <svg width="18px" height="18px">
+              <use href="./images/logo.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </li>
+          <li>
+            <p class="backdrop-pretitle">Коментар</p>
+          </li>
+        </ul>
+        <p class="text">
+          Погоджуюся з розсилкою та приймаю
+          <a href="" class="backdrop-text-effect">Умови договору</a>
+        </p>
+        <button type="button" class="button-send">Відправити</button>
+      </div> -->
     </div>
     <script src="./js/modal.js"></script>
   </body>
