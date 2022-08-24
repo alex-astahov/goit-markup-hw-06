@@ -488,16 +488,14 @@
             <use href="./images/logo.svg#icon-email-black-18dp-1"></use>
           </svg>
           </div>
-            Коментар
-            <input type="text" placeholder="Введіть текст" class="modal-form-input-comment">
-            </label>
-            <label class="modal-label-comment">
-            <svg width="18px" height="18px" class="">
-            <use href="./images/logo.svg#icon-Vector-1"></use>
-          </svg>
-            <p class="modal-text"> Погоджуюся з розсилкою та приймаю
-          <a href="" class="modal-text-effect">Умови договору</a></p>
           </label>
+          <label for="user-connent" class="modal-pretitle">Коментар</label>
+          <textarea name="user-connent" id="user-connent"  placeholder="Введіть текст" class="modal-form-input-comment"></textarea>
+          <input type="checkbox" name="user-policy" value="true" class="modal-input-check is-hidden" id="user-policy" required>
+          <label for="user-policy" class="modal-text"><span><svg width="11px" height="8px" class="modal-check-icon">
+            <use href="./images/logo.svg#icon-Vector-3"></use>
+          </svg></span>Погоджуюся з розсилкою та приймаю
+          <a href="" class="modal-text-effect"> Умови договору</a></label>
           <div class="modal-button">
             <button type="submit" class="modal-button-send">Відправити</button>
             </div>
