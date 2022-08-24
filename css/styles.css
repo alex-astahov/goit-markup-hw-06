@@ -439,8 +439,7 @@ img {
 }
 .main-container-footer {
   display: flex;
-  justify-content: flex-start;
-  column-gap: 70px;
+  justify-content: space-between;
 }
 
 /*---portfolio---*/
@@ -538,8 +537,39 @@ img {
   overflow: hidden;
 }
 .footer-form {
-  padding-left: 25px;
+  width: 570px;
 }
+.footer-label {
+  display: flex;
+}
+.footer-form-input {
+  width: 355px;
+  height: 50px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.footer-form-input:focus {
+  outline: none;
+}
+.footer-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+
 /*---modal-window---*/
 .backdrop {
   height: 100%;
@@ -549,6 +579,7 @@ img {
   top: 0;
   transition: opacity 250ms, visibility 250ms;
 }
+
 .backdrop-modal {
   min-height: 580px;
   width: 530px;
@@ -563,7 +594,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear, min-height 250ms linear;
 }
-.backdrop-button {
+.modal-button-close {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -576,10 +607,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-button:hover {
+.modal-button-close:hover {
   fill: var(--main-colore);
 }
-.backdrop-button:focus {
+.modal-button-close:focus {
   fill: var(--main-colore);
 }
 .is-hidden {
@@ -591,28 +622,24 @@ img {
   transform: translate(-50%, -50%);
   min-height: 0;
 }
-.backdrop-title {
+.modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
-.backdrop-pretitle {
+.modal-form {
+}
+.modal-pretitle {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.backdrop-label {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  row-gap: 10px;
-}
-.button-send {
+.modal-button-send {
   height: 50px;
   width: 200px;
   background: var(--main-colore);
@@ -623,30 +650,75 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 30px;
   fill: #ffffff;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
-.button-send:hover {
+.modal-button-send:hover {
   background-color: #188ce8;
 }
-.button-send:focus {
+.modal-button-send:focus {
   background-color: #188ce8;
 }
-.backdrop-text-effect {
+.modal-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal-text-effect {
   text-decoration-line: underline;
   color: #2196f3;
 }
-.backdrop-form-input {
+.modal-form-input {
   height: 40px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 83px;
+  padding-left: 42px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
-.backdrop-form-input::placeholder {
+.modal-form-input::placeholder {
+}
+.modal-form-input-comment {
+  height: 120px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+.modal-form-input-comment::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input-conteiner {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  margin: ;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-label-comment {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+.modal-button {
+  display: flex;
+  justify-content: center;
 }
