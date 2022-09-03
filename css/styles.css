@@ -582,6 +582,7 @@ img {
 
 .backdrop-modal {
   min-height: 580px;
+  height: 580px;
   width: 530px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -676,8 +677,7 @@ img {
   align-items: center;
   justify-content: center;
   column-gap: 5px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .modal-text span {
   width: 16px;
@@ -703,12 +703,14 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  margin-top: 4px;
-  margin-bottom: 10px;
   outline-color: var(--main-colore);
   transition-property: fill, outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
 }
 .modal-form-input-comment {
   font-size: 12px;
@@ -734,6 +736,8 @@ img {
   outline: var(--main-colore);
 }
 .modal-input-conteiner {
+  height: 70px;
+  display: block;
   position: relative;
 }
 .modal-icon {
@@ -766,4 +770,7 @@ img {
 .modal-input-check:checked + .modal-text span {
   background-color: var(--main-colore);
   border-color: var(--main-colore);
+}
+.modal-container-comment {
+  margin-bottom: 20px;
 }
