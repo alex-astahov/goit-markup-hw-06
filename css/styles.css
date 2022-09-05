@@ -727,6 +727,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  display: block;
 }
 .modal-form-input-comment::placeholder {
   font-size: 12px;
