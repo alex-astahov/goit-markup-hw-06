@@ -475,7 +475,7 @@
         <form class="modal-form">
           <div class="modal-pretitle">
             <label class="modal-input-conteiner">
-              Ім'я
+              <span class="modal-text-style">Ім'я</span>
               <input
                 type="text"
                 class="modal-form-input"
@@ -488,7 +488,7 @@
               </svg>
             </label>
             <label class="modal-input-conteiner">
-              Телефон
+              <span class="modal-text-style">Телефон</span>
               <input
                 type="tel"
                 minlength="10"
@@ -502,7 +502,7 @@
               </svg>
             </label>
             <label class="modal-input-conteiner">
-              Пошта
+              <span class="modal-text-style">Пошта</span>
               <input
                 type="email"
                 class="modal-form-input"
@@ -516,13 +516,17 @@
             </label>
           </div>
           <div class="modal-container-comment">
-            <label for="user-content" class="modal-pretitle">Коментар</label>
+            <label for="user-content" class="modal-pretitle"
+              ><span class="modal-text-style">Коментар</span></label
+            >
             <textarea
-              name="user-connent"
-              id="user-connent"
+              name="user-comment"
+              id="user-content"
               placeholder="Введіть текст"
               class="modal-form-input-comment"
             ></textarea>
+          </div>
+          <label for="user-policy" class="modal-text">
             <input
               type="checkbox"
               name="user-policy"
@@ -530,18 +534,14 @@
               class="modal-input-check is-hidden"
               id="user-policy"
               required
-            />
-          </div>
-          <label for="user-policy" class="modal-text"
-            ><span
+            /><span
               ><svg width="11px" height="8px" class="modal-check-icon">
                 <use href="./images/logo.svg#icon-Vector-3"></use></svg></span
             >Погоджуюся з розсилкою та приймаю
-            <a href="" class="modal-text-effect">Умови договору</a></label
-          >
-          <div class="modal-button">
-            <button type="submit" class="modal-button-send">Відправити</button>
-          </div>
+            <a href="" class="modal-text-effect">Умови договору</a>
+          </label>
+
+          <button type="submit" class="modal-button-send">Відправити</button>
         </form>
       </div>
     </div>
